@@ -8,9 +8,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>DOTA 2</title>
 </head>
-<body style="height:1500px">
+
+<body style="height:1100px">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">THE INTERNATIONAL X - DOTA 2</a>
@@ -51,103 +52,176 @@
                 </div>
             </li>
             <li class="nav-item">
-            <a class="nav-link disabled" href="#">APUESTAS</a>
-            </li>
-        </ul>
+            <a class="nav-link disabled" href="#">REGISTRATE GRATIS </a>
+            </li
+            </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 </nav>
-<form class="needs-validation" novalidate>
-    <div class="form-row">
-      <div class="col-md-4 mb-3">
-        <label for="validationCustom01">NOMBRES</label>
-        <input type="text" class="form-control" id="validationCustom01" placeholder="NOMBRES" value="NOMBRES" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationCustom02">APELLIDOS</label>
-        <input type="text" class="form-control" id="validationCustom02" placeholder="APELLIDOS" value="APELLIDOS" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationCustomUsername">USUARIO</label>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-          </div>
-          <input type="text" class="form-control" id="validationCustomUsername" placeholder="USUARIO" aria-describedby="inputGroupPrepend" required>
-          <div class="invalid-feedback">
-            Please choose a username.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="col-md-6 mb-3">
-        <label for="validationCustom03">CIUDAD</label>
-        <input type="text" class="form-control" id="validationCustom03" placeholder="CIUDAD" required>
-        <div class="invalid-feedback">
-          Please provide a valid city.
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="validationCustom04">PAIS</label>
-        <input type="text" class="form-control" id="validationCustom04" placeholder="PAIS" required>
-        <div class="invalid-feedback">
-          Please provide a valid state.
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="validationCustom05">CODIGO</label>
-        <input type="text" class="form-control" id="validationCustom05" placeholder="CODIGO" required>
-        <div class="invalid-feedback">
-          Please provide a valid zip.
-        </div>
-      </div>
+
+<div class="container">
+  <header>
+		<div class="">
+			<h1 class="">FICHA DE REGISTRO</h1>
+			<P>Los datos ingresados se consideran como declaración jurada.</P>
+		</div>
+</header>
+	<form action="guardar.php" method="post" name="frm">
+	  <div class="form-group">
+	    <label for="nombres">NOMBRES</label>
+	    <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres">
     </div>
     <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-        <label class="form-check-label" for="invalidCheck">
-          ACEPTO LAS CONDIONES
-        </label>
-        <div class="invalid-feedback">
-          You must agree before submitting.
-        </div>
-      </div>
-    </div>
-    <button class="btn btn-primary" type="submit">INGRESAR</button>
-  </form>
-  
-  <script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-  </script>
-
-
+	    <label for="dni">DNI</label>
+	    <input type="number" class="form-control" id="dni" name="dni" placeholder="DNI">
+	  </div>
+	<div class="form-group row">
+	  <div class="form-group col-md-6">
+	    <label for="paterno">APELLIDO PATERNO</label>
+	    <input type="text" class="form-control" id="paterno" name="paterno" placeholder="Apellido Paterno">
+	  </div>
+	  <div class="form-group col-md-6">
+	    <label for="materno">APELLIDO MATERNO</label>
+	    <input type="text" class="form-control" id="materno" name="materno" placeholder="Apellido Materno">
+	  </div>
+	</div>
+	<div class="form-group row">
+		<div class="form-group col-md-6">
+	      <label for="pais">PAIS</label>
+	      <select id="pais" name="pais" class="form-control">
+	        <option selected>Seleccione...</option>
+	        <option>Peru</option>
+	        <option>Bolivia</option>
+	        <option>Argentina</option>
+	        <option>Chile</option>
+	        <option>Colombia</option>
+	        <option>Ecuador</option>
+	        <option>Brasil</option>
+	        <option>Venezuela</option>
+	        <option>Estados Unidos</option>
+	        <option>Rusia</option>
+	        <option>Mexico</option>
+	        <option>Paraguay</option>
+	        <option>Nueva Zelanda</option>
+	        <option>Japon</option>
+	        <option>Turquia</option>
+	        <option>Corea del Sur</option>
+	        <option>Corea del Norte</option>
+	        <option>Paquistan</option>
+	        <option>Canada</option>
+	        <option>Ilalia</option>
+	        <option>España</option>
+	      </select>
+	    </div>
+	 	 <div class="form-group col-md-6">
+	      <label for="departamento">DEPARTAMENTO</label>
+	      <select id="departamento" name="departamento" class="form-control">
+	        <option selected>Seleccione...</option>
+	        <option>Puno</option>
+	        <option>Arequipa</option>
+	        <option>Moquegua</option>
+	        <option>Tacna</option>
+	        <option>Lima</option>
+	        <option>Ica</option>
+	        <option>Cusco</option>
+	        <option>Ucayali</option>
+	        <option>La Libertad</option>
+			<option>Ancash</option>
+	        <option>Ayacucho</option>
+	        <option>Madre de Dios</option>
+	        <option>Tumbes</option>
+	        <option>Lambayeque</option>
+	        <option>Apurimac</option>
+	        <option>Amazonas</option>
+	        <option>Junín</option>
+	        <option>Loreto</option>
+	        <option>Cajamarca</option>
+	        <option>Huancavelica</option>
+	        <option>Huanuco</option>
+	        <option>Pasco</option>
+	        <option>Piura</option>
+	        <option>San Martin</option>
+	      </select>
+	    </div>
+	</div>
+	<div class="form-group row">
+		<div class="form-group col-md-6">
+	      <label for="provincia">PROVINCIA</label>
+	      <select id="provincia" name="provincia" class="form-control">
+	        <option selected>Seleccione...</option>
+	        <option>Puno</option>
+	        <option>San Roman</option>
+	        <option>Yunguyo</option>
+	        <option>Moho</option>
+	        <option>Huancané</option>
+	        <option>Azangaro</option>
+	        <option>Sandia</option>
+	        <option>Carabaya</option>
+	        <option>Chucuito</option>
+	        <option>El Collao</option>
+	        <option>Lampa</option>
+	        <option>Melgar</option>
+	        <option>San Antonio de Putina</option>
+	      </select>
+	    </div>
+	     <div class="form-group col-md-6">
+	      <label for="distrito">DISTRITO</label>
+	      <select id="distrito" name="distrito" class="form-control">
+	        <option selected>Seleccione...</option>
+	        <option>Huancane</option>
+	        <option>Pusi</option>
+	        <option>Taraco</option>
+	        <option>Vilquechico</option>
+	        <option>Huatasani</option>
+	        <option>Inchupalla</option>
+	        <option>Rosaspata</option>
+	        <option>Cojata</option>
+	      </select>
+	    </div>
+		
+	</div>
+	<div class="form-group row">
+		<div class="form-group col-md-6">
+		   <label for="nacimiento">FECHA DE NACIMIENTO</label><input type="date" name="nacimiento" class="form-control" id="nacimiento" placeholder="Fecha de nacimiento">
+		</div>
+		<div class="form-group col-md-6">
+		<label for="sexo">SEXO</label>
+		<br>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="sexo" id="sexo" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">Masculino</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="sexo" id="sexo" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">Femenino</label>
+		</div>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="form-group col-md-6">
+	    <label for="telefono">NUMERO DE TELEFONO</label>
+	    <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+	  	</div>
+	  <div class="form-group col-md-6">
+	    <label for="direccion">DIRECCION</label>
+	    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion">
+	  </div>
+	</div>
+	<div class="form-group">
+	    <label for="correo">CORREO ELECTRONICO</label>
+	    <input type="email" class="form-control" id="correo" name="correo" placeholder="Ejemplo: alguien@algo.com">
+	 </div>
+	<div class="form-check mb-2 mr-sm-2">
+    <input class="form-check-input" type="checkbox" id="acepto" name="acepto">
+    <label class="form-check-label" for="inlineFormCheck">Acepto todos los terminos y condiones.
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">GUARDAR</button>
+</form>
+</div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom bg-company-red">
     <a class="navbar-brand" href="#">VALVE</a>
